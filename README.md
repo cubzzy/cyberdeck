@@ -82,12 +82,12 @@ The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + 
 # Additional Notes #
 Before I get to the tutorial of how to set everything up, I want to be clear that everything will work fine if you use a cheap mouse and keyboard or one you already have. 
 
-The main changes that would alter the build and negate the helpfulness of the tutorial would be changing the ***monitor***, the ***Raspberry Pi***, and the ***Expansion Board***. 
+The main changes that would alter the build and negate the helpfulness of this tutorial would be changing the ***Monitor***, the ***Raspberry Pi***, and the ***Expansion Board***. 
 
 I haven't tried other power banks, but you would have to ensure it has enough mAh to get a decently long runtime (ideally 15,000mAh+). Increasing the size of the screen would also increase power draw and thus decrease battery life.
 
-It's possible to change the case and still follow this tutorial for the RPi + PD Expansion Board + Montior setup, provided that you've measured everything and have a way for everything to fit (ideally securely).
+It's possible to change the case and still follow this tutorial for the RPi + PD Expansion Board + Monitor setup, provided that you've measured everything and have a way for everything to fit (ideally securely).
 
 Finally, I can't verify that all of the parts listed will be available or at the same price at the time I made this repository.
 
-**Assuming you have read over the preceding part of this README, and have the parts you want to use in front of you, you can move on to the **Tutorial** section.
+**Assuming you have read over the preceding part of this README, and have the parts you want to use in front of you, you can move on to the *Tutorial* section.**
