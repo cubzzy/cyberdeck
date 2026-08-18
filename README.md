@@ -47,9 +47,38 @@ $19.88
 - [TECKNET Wireless Mouse](https://www.amazon.com/dp/B0DW7M2JY1?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 $16.99
 
-## Total Cost ##
-Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
+# Total Cost #
+      Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
 
+<<<<<<< HEAD
 Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenters boom, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
+=======
+      Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenters boom, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPIs. 
+>>>>>>> 012a255 (- Added features to README.md)
 
-The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
+      The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
+
+# Features #
+**Board**
+
+- Raspberry Pi 5 quad-core 2.4 GHz ARM Cortex-A76 CPU and VideoCore VII GPU
+- Gigabit Ethernet port, 2 USB-A 3.0 ports, 2 USB-A 2.0 ports, MicroSD card slot, Micro-HDMI in/out ports, USB-C power port, etc.
+- Cooled with the bundled Active Cooler + heatsink (the heatsink comes with the Active Cooler add-on)
+- 32GB Flashdrive
+
+**Screen**
+- 10.1 inch 1024x600 Touch Screen, 3.5mm Jack and 4PIN Header
+
+**Power**
+- Flexibly chooses the correct power output to give to the Pi (given the power bank wattage is enough)
+- 87W power bank capable of providing an estimated 5-6 hours of runtime (I haven't run the battery all the way yet, but based on how slow it drains I estimate this amount of time). 
+
+**Keyboard + Mouse**
+- Hotswap PCB with RGB underglow
+- USB-C port with USB Blocker
+- 7 degree typing angle
+- Pre-lubed switches
+- Bluetooth mouse
+
+**OS**
+- Running Kali Linux (64-bit) downloaded through the official RPi imager
