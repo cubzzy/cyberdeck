@@ -46,3 +46,6 @@ $19.88
 **Mouse:**
 - [TECKNET Wireless Mouse](https://www.amazon.com/dp/B0DW7M2JY1?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 $16.99
+
+## Total Cost ##
+Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenters boom, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPIs. The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could easily be cut in half if you use cheaper parts.
