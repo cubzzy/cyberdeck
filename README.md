@@ -1,5 +1,5 @@
-# cyberdeck
-A parts list, cost, features, and complete tutorial to building a RPI-5 Pelican case based cyberdeck.
+# Building a RPi-5 Pelican Cyberdeck
+A parts list, cost, features, and complete tutorial to building a RPi-5 Pelican case based cyberdeck.
 
 Before I go into a complete tutorial to how I built it (and how you can too), I'll first go over the parts and specs.
 
@@ -16,7 +16,7 @@ $114.95
 
 **Power:**
 - [GeeekPI PD Power Expansion Board](https://www.amazon.com/dp/B0CYPRDY9Q?ref=ppx_yo2ov_dt_b_fed_asin_title)
-This will allow you to use the following power bank as it converts the watts into the correct Amps/Volts required by the RPI5. I'll go into more detail on this later.
+This will allow you to use the following power bank as it converts the watts into the correct Amps/Volts required by the RPi5. I'll go into more detail on this later.
 $29.99
 
 - [20,000mAh Anker Power Bank](https://www.amazon.com/dp/B0CXDXP8VR?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
@@ -50,6 +50,6 @@ $16.99
 ## Total Cost ##
 Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
 
-Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenters boom, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPIs. 
+Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenters boom, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
 
 The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
