@@ -50,6 +50,9 @@ $19.88
 - [TECKNET Wireless Mouse](https://www.amazon.com/dp/B0DW7M2JY1?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 $16.99
 
+**Cords:**
+- There are no additional cords that are required for this build. Every part that needs a cord comes with its own.
+
 # Total Cost #
 Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
 
