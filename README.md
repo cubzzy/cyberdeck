@@ -146,4 +146,11 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 
 **Getting DNS Working**
 - You may notice that you don't have access to WiFi, even though you may have already set it up in the Raspberry Pi Imager. 
-- To fix this, we are first going to 
+- They may have fixed this by the time you're reading this, but I'll explain the process I went through, to the best of my memory and notes, to help solve this issue.
+- I believe that netplan, a network configuration utility for Linux, was bypassing NetworkManager (no renderer: key was set in the netplan YAML). To solve this, I backed up the YAML file (just copied the file with the cp command), ran sudo nano /etc/netplan/50-cloud-init.yaml, then added "renderer: NetworkManager" right under version.
+- Then, I ran sudo netplan apply. This should get WiFi working for your machine. 
+
+## Completion ##
+You should now have a fully functioning Kali Linux machine that's capable of running on WiFi and connecting to the internet. If you have any issues, feel free to contact me (I put my information at the bottom)
+
+# Limitations #
