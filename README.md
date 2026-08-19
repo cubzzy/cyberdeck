@@ -20,7 +20,7 @@ $114.95
 
 **Power:**
 - [GeeekPI PD Power Expansion Board](https://www.amazon.com/dp/B0CYPRDY9Q?ref=ppx_yo2ov_dt_b_fed_asin_title)
-This will allow you to use the following power bank as it converts the watts into the correct Amps/Volts required by the RPi5. I'll go into more detail on this later.
+This will allow you to use the following power bank as it converts the power to the correct 5V/5A that the Pi 5 needs. I'll go into more detail on this later.
 $29.99
 
 - [20,000mAh Anker Power Bank](https://www.amazon.com/dp/B0CXDXP8VR?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
@@ -30,7 +30,7 @@ $69.99
 - [Holy60 Keyboard Kit](https://kbdfans.com/products/holy60-keyboard-kit)
 $171.00
 
-- [Gateron Smoothie Switches (7x Quantity)](https://kbdfans.com/products/gateron-smoothie-linear-switch?_pos=2&_sid=1c38d201f&_ss=r)
+- [Gateron Smoothie Switches (7x Packs)](https://kbdfans.com/products/gateron-smoothie-linear-switch?_pos=2&_sid=1c38d201f&_ss=r)
 $21.00
  
 - [Spider Web Keycaps](https://www.amazon.com/dp/B0DT64PW3C?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
@@ -57,7 +57,7 @@ $16.99
 # Total Cost #
 Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
 
-Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI datecenter boom at the time of writing this, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
+Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI data center boom at the time of writing this, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
 
 The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
 
@@ -65,7 +65,7 @@ The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + 
 **Board**
 
 - Raspberry Pi 5 quad-core 2.4 GHz ARM Cortex-A76 CPU and VideoCore VII GPU
-- Gigabit Ethernet port, 2 USB-A 3.0 ports, 2 USB-A 2.0 ports, MicroSD card slot, Micro-HDMI in/out ports, USB-C power port, etc.
+- Gigabit Ethernet port, 2 USB-A 3.0 ports, 2 USB-A 2.0 ports, MicroSD card slot, dual Micro-HDMI output ports, USB-C power port, etc.
 - Cooled with the bundled Active Cooler + heatsink (the heatsink comes with the Active Cooler add-on)
 - 32GB MicroSD card
 
@@ -85,7 +85,7 @@ The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + 
 
 **Case**
 - The computer, power bank, keyboard, and mouse, are held in place just with foam that I've cut out to fit each part. Surprisingly, this method is really stable and even when I shake the case I'm not able to hear anything moving around inside. When I open the case everything is in the exact spot I left it in.
-- The monitor is mounted with "3M Dual Lock Fastener" which is basically just strong velcro. It seems to adhere well to the polypropelene case.
+- The monitor is mounted with "3M Dual Lock Fastener" which is basically just strong velcro. It seems to adhere well to the polypropylene case.
 - There are *no* permanent changes to the case. I could take everything out and use the case for a different purpose.
 
 **OS**
@@ -105,7 +105,7 @@ Finally, I can't verify that all of the parts listed will be available or at the
 **Assuming you have read over the preceding part of this README, and have the parts you want to use in front of you, you can move on to the *Tutorial* section.**
 
 # Tutorial #
-I am going to go part by part, as I think that is most efficient. Additionally, I'll go through my thinking process and the resources I used to give you some insight on how I approached this projects and things to keep in mind when building your own. Note that it was not as easy for me to build it myself; I faced several challenges like the keyboard shorting (I was unaware it needed rubber standoffs, more on that later), an actual issue with a different Power Expansion Board I used before the GeeekPi one (back and forth with support to eventually find out it was a hardware issue with the CC line of the USB port), and other time spent on things like researching the best way to mount everything without modifying the case (which doesn't come with mounting screw holes). I hope that this can help someone on their cyberdeck journey and hopefully have a more graceful time building their project while still having ample challenge to make it a learning process. 
+I am going to go part by part, as I think that is most efficient. Additionally, I'll go through my thinking process and the resources I used to give you some insight on how I approached this project and things to keep in mind when building your own. Note that it was not as easy for me to build it myself; I faced several challenges like the keyboard shorting (I was unaware it needed rubber stand-offs, more on that later), an actual issue with a different Power Expansion Board I used before the GeeekPi one (back and forth with support to eventually find out it was a hardware issue with the CC line of the USB port), and other time spent on things like researching the best way to mount everything without modifying the case (which doesn't come with mounting screw holes). I hope that this can help someone on their cyberdeck journey and hopefully have a more graceful time building their project while still having ample challenge to make it a learning process. 
 
 **Keyboard**
 
@@ -119,7 +119,7 @@ If you are planning not to build a custom keyboard, you can skip this section.
 
 - If you decide to go with a keyboard kit, there are many videos online of how to put them together. For the sake of space, I won't go too deep into it, but if you go into the Kbdfans discord, there are lots of resources there (like lubing stabilizers, how to put stabs together, and generally how to put together all the parts).  
 
-- I basically just tried to figure out how to put everything together based on what made sense. The only thing I could tell you that genuinely would save time is that the detachable golden stand-offs that mine came with (essentially a threaded fastener to close a gap between two objects) actually shorted several of the keys together. When I had everything set up and pressed the H key, several other keys would also output that were close to the H key. To combat this, you can purchase [silicone covers](https://kbdfans.com/products/kbdfans-standoff-silicone-cover) for the standoffs that prevent this issue. I ended up just covering the standoff with electrical tape, which was slightly janky given how small the standoff is, but it ended up working fine, and I haven't had any issues since.
+- I basically just tried to figure out how to put everything together based on what made sense. The only thing I could tell you that genuinely would save time is that the detachable golden stand-offs that mine came with (essentially a threaded fastener to close a gap between two objects) actually shorted several of the keys together. When I had everything set up and pressed the H key, several other keys would also output that were close to the H key. To combat this, you can purchase [silicone covers](https://kbdfans.com/products/kbdfans-standoff-silicone-cover) for the stand-offs that prevent this issue. I ended up just covering the stand-off with electrical tape, which was slightly janky given how small the stand-off is, but it ended up working fine, and I haven't had any issues since.
 
 - Another consideration to make when building a keyboard is if you want to lube the stabs and switches or not. There are many videos out there on how to do this, but the main idea is that dielectric grease can be used for the metal part of the stab, and you can use Krytox 205g0 to lube the plastic part of the stab. Dielectric grease has a vaseline-consistency and is used for spark plugs, so it makes sense that it's not used on the inner housing of the stab (it would likely be too thick and result in a mushy key press). Krytox is a lot lighter.
 
@@ -136,7 +136,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 - Next, you can mount the Expansion Board. Directions also come with the box, and it just involves screwing in some pieces with a screwdriver that comes with the Expansion Board.
 
 **Flashing the OS**
-- In order to flash a new operating system onto the Pi, you can use the official [Raspberry Pi Imager](https://www.raspberrypi.com/software/). Once you download the actual imager software, you can follow the onscreen steps to flash (write a new operating system to) the drive. You can now insert that into the Pi. 
+- In order to flash a new operating system onto the Pi, you can use the official [Raspberry Pi Imager](https://www.raspberrypi.com/software/). Once you download the actual imager software, you can select Kali Linux and follow the onscreen steps to flash (write a new operating system to) the drive. You can now insert that into the Pi. 
  
 **Connecting Peripherals**
 - At this point, you can plug in the keyboard, mouse, monitor, and any other peripherals you may have. 
@@ -148,7 +148,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 **Turning it On**
 - Now that you supplied power, a blue light should appear on the Expansion Board. Click the "Power On" button on the Expansion Board, and the Pi should start booting.
 
-## Check-up ##
+**Check-up**
 - By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log in screen. You can now log in.
 
 **Getting WiFi Working**
@@ -157,9 +157,9 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 - I believe that netplan, a network configuration utility for Linux, was bypassing NetworkManager (no renderer: key was set in the netplan YAML). To solve this, I backed up the YAML file (just copied the file with the cp command), ran sudo nano /etc/netplan/50-cloud-init.yaml, then added "renderer: NetworkManager" right under version.
 - Then, I ran sudo netplan apply. This should get WiFi working for your machine. 
 
-## Mounting  ##
 You should now have a fully functioning Kali Linux machine that's capable of running on WiFi and connecting to the internet. If you have any issues, feel free to contact me (I put my information at the bottom of this README).
 
+**Mounting**
 - After getting all the parts working, I spent some time determing how and in what case I wanted to mount my cyberdeck.
 - I scrolled through some posts in r/cyberdeck and eventually got inspired by [this post](https://www.reddit.com/r/cyberDeck/comments/15af8l5/wip_cyberdeck_build_in_pelican_case/). I liked the 3D printed baseplate design that this person made, but I also knew that learning how to 3D print would take some time and effort.
 - The Pelican 1400 Case doesn't have any mounting screws, so this also made me averse to implementing the 3D-print idea, as it would either require me to modify the case or have the baseplate stay just through friction. 
