@@ -67,7 +67,7 @@ The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + 
 - Raspberry Pi 5 quad-core 2.4 GHz ARM Cortex-A76 CPU and VideoCore VII GPU
 - Gigabit Ethernet port, 2 USB-A 3.0 ports, 2 USB-A 2.0 ports, MicroSD card slot, Micro-HDMI in/out ports, USB-C power port, etc.
 - Cooled with the bundled Active Cooler + heatsink (the heatsink comes with the Active Cooler add-on)
-- 32GB Flashdrive
+- 32GB MicroSD card
 
 **Screen**
 - 10.1 inch 1024x600 Touch Screen, 3.5mm Jack and 4PIN Header
@@ -151,7 +151,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 ## Check-up ##
 - By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log in screen. You can now log in.
 
-**Getting DNS Working**
+**Getting WiFi Working**
 - You may notice that you don't have access to WiFi, even though you may have already set it up in the Raspberry Pi Imager. 
 - They may have fixed this by the time you're reading this, but I'll explain the process I went through, to the best of my memory and notes, to help solve this issue.
 - I believe that netplan, a network configuration utility for Linux, was bypassing NetworkManager (no renderer: key was set in the netplan YAML). To solve this, I backed up the YAML file (just copied the file with the cp command), ran sudo nano /etc/netplan/50-cloud-init.yaml, then added "renderer: NetworkManager" right under version.
@@ -160,7 +160,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 ## Mounting  ##
 You should now have a fully functioning Kali Linux machine that's capable of running on WiFi and connecting to the internet. If you have any issues, feel free to contact me (I put my information at the bottom)
 
-- After getting all the parts working, I spent some time ddeterming how and in what case I wanted to mount my cyberdeck.
+- After getting all the parts working, I spent some time determing how and in what case I wanted to mount my cyberdeck.
 - I scrolled through some posts in r/cyberdeck and eventually got inspired by [this post](https://www.reddit.com/r/cyberDeck/comments/15af8l5/wip_cyberdeck_build_in_pelican_case/). I liked the 3D printed baseplate design that this person made, but I also knew that learning how to 3D print would take some time and effort.
 - The Pelican 1400 Case doesn't have any mounting screws, so this also made me averse to implementing the 3D-print idea, as it would either require me to modify the case or have the baseplate stay just through friction. 
 - Eventually, I decided to go with the easiest option, which was 3M Dual Lock to mount the monitor, and foam to hold all the bottom components in place.
