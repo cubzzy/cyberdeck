@@ -59,7 +59,7 @@ Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, t
 
 Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI data center boom at the time of writing this, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
 
-The core of the build (and cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
+The core of the build (and most cyberdecks in general) is SBC + monitor + keyboard + mouse/trackpad + case. Adjusting any one of those options can save you money, and the cost of this build could *easily* be cut in half if you use cheaper parts.
 
 # Features #
 **Board**
@@ -111,13 +111,13 @@ I am going to go part by part, as I think that is most efficient. Additionally, 
 
 If you are planning not to build a custom keyboard, you can skip this section.
 
-- After some research, I ended up deciding to go with a keyboard kit. [Kbdfans.com](https://kbdfans.com/) is a very popular website that many people get their keyboard parts from. Additionally, they have a discord which has a community of people that are willing to help if you have any difficulty. 
+- After some research, I ended up deciding to go with a keyboard kit. [Kbdfans.com](https://kbdfans.com/) is a very popular website that many people get their keyboard parts from. Additionally, they have a Discord which has a community of people that are willing to help if you have any difficulty. 
 
-- A [keyboard kit](https://keebsforall.com/blogs/mechanical-keyboards-101/mechanical-keyboard-kits-vs-prebuilt-keyboards) essentially has everything you need to build a keyboard, excluding switches and keycaps. I'd recommend them because it saves you the annoyance of ensuring that your case, pcb, stabs, and plate all work together. 
+- A [keyboard kit](https://keebsforall.com/blogs/mechanical-keyboards-101/mechanical-keyboard-kits-vs-prebuilt-keyboards) essentially has everything you need to build a keyboard, excluding switches and keycaps. I'd recommend them because it saves you the annoyance of ensuring that your case, PCB, stabs, and plate all work together. 
 
 - I chose my switches and keycaps based on their sound and look. There can be a lot of nuance with how the keys bottom out (when you press them fully down) and the material of the keycaps, and the sound difference that it makes.
 
-- If you decide to go with a keyboard kit, there are many videos online of how to put them together. For the sake of space, I won't go too deep into it, but if you go into the Kbdfans discord, there are lots of resources there (like lubing stabilizers, how to put stabs together, and generally how to put together all the parts).  
+- If you decide to go with a keyboard kit, there are many videos online of how to put them together. For the sake of space, I won't go too deep into it, but if you go into the Kbdfans Discord, there are lots of resources there (like lubing stabilizers, how to put stabs together, and generally how to put together all the parts).  
 
 - I basically just tried to figure out how to put everything together based on what made sense. The only thing I could tell you that genuinely would save time is that the detachable golden stand-offs that mine came with (essentially a threaded fastener to close a gap between two objects) actually shorted several of the keys together. When I had everything set up and pressed the H key, several other keys would also output that were close to the H key. To combat this, you can purchase [silicone covers](https://kbdfans.com/products/kbdfans-standoff-silicone-cover) for the stand-offs that prevent this issue. I ended up just covering the stand-off with electrical tape, which was slightly janky given how small the stand-off is, but it ended up working fine, and I haven't had any issues since.
 
@@ -149,7 +149,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 - Now that you supplied power, a blue light should appear on the Expansion Board. Click the "Power On" button on the Expansion Board, and the Pi should start booting.
 
 **Check-up**
-- By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log in screen. You can now log in.
+- By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log-in screen. You can now log in.
 
 **Getting WiFi Working**
 - You may notice that you don't have access to WiFi, even though you may have already set it up in the Raspberry Pi Imager. 
@@ -169,7 +169,7 @@ You should now have a fully functioning Kali Linux machine that's capable of run
 - Everything fits snug and luckily I was able to achieve this without doing any modifications to the case, which is a big plus. As stated in the *Features* section, once the case is closed, I'm able to shake it and not hear any movement inside. Everything stays in the spot I left it in.
 
 # Limitations #
-- On this screen, some things at the bottom of the screen get slightly cut off. I'm guessing that Kali just doesn't support the resolution that the screen gives, but I haven't dug too much into this because it doesn't bother me too much, but it's something to consider if you want to try out a different screen.
+- On this screen, some things at the bottom of the screen get slightly cut off. I'm guessing that Kali just doesn't support the resolution that the screen gives, but I haven't really dug into this because it doesn't bother me too much, but it's something to consider if you want to try out a different screen.
 
 # End #
 I hope you enjoyed the recap of my project. If you have any questions, comments, or concerns, you can reach out to me at supercalifornia1992@proton.me. If you are planning or in the process of your own build, I wish you luck!
