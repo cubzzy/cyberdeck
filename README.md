@@ -107,6 +107,7 @@ Finally, I can't verify that all of the parts listed will be available or at the
 I am going to go part by part, as I think that is most efficient. Additionally, I'll go through my thinking process and the resources I used to give you some insight on how I approached this projects and things to keep in mind when building your own. Note that it was not as easy for me to build it myself; I faced several challenges like the keyboard shorting (I was unaware it needed rubber standoffs, more on that later), an actual issue with a different Power Expansion Board I used before the GeeekPi one (back and forth with support to eventually find out it was a hardware issue with the CC line of the USB port), and other time spent on things like researching the best way to mount everything without modifying the case (which don't come with mounting screw holes). I hope that this can help someone on their cyberdeck journey and hopefully have a more graceful time building their project while still having ample challenge to make it a learning process. 
 
 **Keyboard**
+
 If you are planning to not build a custom keyboard, you can skip this section.
 
 I first built a keyboard when I was around 14 or so, but I completely forgot how to approach it. After some research, I ended up deciding to go with a keyboard kit. **Kbdfans.com** is a very populsar website that many people get their keyboard parts from. Additionally, they have a discord which has a community of people that are willing to help if you have any difficulty. 
@@ -117,4 +118,32 @@ I basically just took out all the parts and tried to figure it out based on what
 The only other consideration to make when building a keyboard is if you want to lube the stabs/switches or not. There are many videos out there on how to do this, but the main idea is that Dielectric Grease can be used for the metal part of the stab, and you can use Krytox 205g0 to lube the plastic part of the stab. Dielectric grease is kind of like a vaseline-consistency and is used for spark plugs, which makes sense that it's not used on the inner housing of the stab (it would likely be too thick and result in a mushy key press). Krytox is a lot lighter.
 
 A fun part about making a custom keyboard is configuring the keys and light patterns. There are websites online where you can do this, and it depends on your PCB, but the one for my keyboard is [Via](https://usevia.app/). All you have to do is connect your keyboard and the software is fairly intuitive to use. For me, I have the very bottom right key set to change layers. Layers is a way to add more functionality to your keyboard. On a 60% keyboard like mine, there aren't many keys to work with. If you add multiple layers, you can basically customize it so that if you click a certain button, you go up or down a layer, and you are then able to use completely different keys. In layer 0, I have my default keyboard layout, and on layer 1, I have light pattern switching, brightness up and down, and arrow keys. I also put the backtick symbol (`) in the top left because the default output for the top left key is escape. 
+After configuring the keys and the RGB if your PCB supports that, you're good to go. 
 
+**Putting Together the Board and Related Components**
+
+Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts list, you can follow these directions. Physically mounting everything is fairly straightforward.
+
+- Ensure you have the RPi, Active Cooler, MicroSD card, and Expansion Board in front of you.
+- First mount the Active Cooler. Directions come with the box, but it essentially just sticks on with an adhesive and two plastic pieces to mount it, and gets plugged in to the RPi. Make sure you plug it in the right way, as it can damage the connection if not. Also, as stated in the directions, don't try and remove the active cooler after installing it, as this can damage the plastic mounts that are holding it in place. 
+- Next, you can mount the expansion board. Directions also come with the box, and it just involves screwing in some pieces with a screwdriver that comes with the Expansion Board.
+
+**Flashing the OS**
+- In order to flash a new operating system onto the Pi, you can use the official [Raspberry Pi Imager](https://www.raspberrypi.com/software/). Once you download the actual imager software, you can follow the onscreen steps to flash (write a new operating system) the drive. You can now insert that into the Pi. 
+ 
+**Connecting Peripherals**
+- At this point, you can plug in the keyboard, mouse, monitor, and any other peripherals you may have. 
+
+**Adding Power**
+- If you *don't* use an Expansion Board, and try to plug in a power bank straight to the Pi, the voltage will likely be throttled. The Pi will go from being able to supply 1.6A to all peripherals down to 600mA. I haven't been able to find any power banks that are able to supply the 5V/5A that the Pi5 wants, and this is something that's documented online. Some people go around this by modifying a file that essentially allows the 5V/5A power draw anyways, even if the power bank can't support it, but it's risky to do that as it can damage components. Only do that if you're sure that your power bank can supply that. 
+- Make sure that you charge your power bank fully, and then connect it to the USB-C input on the Expansion Board. Something that required more research when working with a Pi5 is that a Pi5 requires 5V/5A, which is not standard of PD (Power Delivery) protocol. The Expansion Board automatically deals with this power negotiation, provided that the power bank has enough wattage. You can find more information on the Pi5 power requirements [here](https://pip-assets.raspberrypi.com/categories/685-app-notes-guides-whitepapers/documents/RP-009856-WP-1-USB%20Power%20delivery%20on%20Raspberry%20Pi%205.pdf).
+
+**Turning it On**
+- Now that you supplied power, a blue light should appear on the Expansion Board. Click the "Power On" button on the Expansion Board, and the Pi should start booting.
+
+## Check-up ##
+- By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log in screen. You can now log in.
+
+**Getting DNS Working**
+- You may notice that you don't have access to WiFi, even though you may have already set it up in the Raspberry Pi Imager. 
+- To fix this, we are first going to 
