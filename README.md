@@ -5,6 +5,7 @@ A parts list, cost, features, and complete tutorial to building a RPi-5 Pelican 
 The point of this cyberdeck is to provide a functional Linux system. I want to learn more about networking, and since Kali Linux has many networking packages pre-installed, I decided on Kali Linux as my chosen Linux distro, and a good way to obtain a Linux machine would be to make one. Building this project taught me a lot about how much information is out there in the DIY-electronics world (and how much you can do/learn through it), basic USB protocols, pinouts, power negotiation, and more. This is my first build, and I'm by no means an expert in any of the skills I mentioned, but I think starting a journey into the custom-electronics world with this is a good start.
 
 Before I go into a complete tutorial to how I built it (and how you can too), I'll first go over the parts and specs.
+Even if you don't plan on following the tutorial, it might be helpful to follow along and get some inspiration for how you want to approach your project.
 
 # Parts List #
 
@@ -108,7 +109,7 @@ I am going to go part by part, as I think that is most efficient. Additionally, 
 
 **Keyboard**
 
-If you are planning to not build a custom keyboard, you can skip this section.
+If you are planning not to build a custom keyboard, you can skip this section.
 
 - After some research, I ended up deciding to go with a keyboard kit. [Kbdfans.com](https://kbdfans.com/) is a very popular website that many people get their keyboard parts from. Additionally, they have a discord which has a community of people that are willing to help if you have any difficulty. 
 
@@ -124,7 +125,7 @@ If you are planning to not build a custom keyboard, you can skip this section.
 
 - A fun part about making a custom keyboard is configuring the keys and light patterns. There are websites online where you can do this, and it depends on your PCB, but the one for my keyboard is [Via](https://usevia.app/). All you have to do is connect your keyboard and the software is fairly intuitive to use. For me, I have the very bottom right key set to change layers. [Layers](https://get.vial.today/manual/layers.html) are a way to add more functionality to your keyboard. On a 60% keyboard like mine, there aren't many keys to work with. If you add multiple layers, you can basically customize it so that if you click a certain button, you go up or down a layer, and you are then able to use completely different keys. In layer 0, I have my default keyboard layout, and on layer 1, I have light pattern switching, brightness up and down, and arrow keys. I also put the backtick symbol (`) in the top left because the default output for the top left key is escape. 
 
-**After configuring the keys and the RGB if your PCB supports that, you're good to go. **
+After configuring the keys and the RGB if your PCB supports that, you're good to go.
 
 **Putting Together the Board and Related Components**
 
@@ -156,7 +157,20 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 - I believe that netplan, a network configuration utility for Linux, was bypassing NetworkManager (no renderer: key was set in the netplan YAML). To solve this, I backed up the YAML file (just copied the file with the cp command), ran sudo nano /etc/netplan/50-cloud-init.yaml, then added "renderer: NetworkManager" right under version.
 - Then, I ran sudo netplan apply. This should get WiFi working for your machine. 
 
-## Completion ##
+## Mounting  ##
 You should now have a fully functioning Kali Linux machine that's capable of running on WiFi and connecting to the internet. If you have any issues, feel free to contact me (I put my information at the bottom)
 
+- After getting all the parts working, I spent some time ddeterming how and in what case I wanted to mount my cyberdeck.
+- I scrolled through some posts in r/cyberdeck and eventually got inspired by [this post](https://www.reddit.com/r/cyberDeck/comments/15af8l5/wip_cyberdeck_build_in_pelican_case/). I liked the 3D printed baseplate design that this person made, but I also knew that learning how to 3D print would take some time and effort.
+- The Pelican 1400 Case doesn't have any mounting screws, so this also made me averse to implementing the 3D-print idea, as it would either require me to modify the case or have the baseplate stay just through friction. 
+- Eventually, I decided to go with the easiest option, which was 3M Dual Lock to mount the monitor, and foam to hold all the bottom components in place.
+- Essentially, I just cut out four strips of the Dual Lock, attached it to the back of the monitor, and cut out the foam so that everything would fit snug. The foam comes already in a grid-like pattern, meaning cutting it was pretty trivial.
+- I found using a pocket knife to cut along the edges of the grids to the size of each component (keyboard, Pi, power bank), was most efficient. Because there's no vertical grids built in to the foam, I would take out the foam after cutting the edges, and cut it vertically however much I needed so that it was deep enough for the respective part when I put it back in. 
+- Everything fits snug and luckily I was able to achieve this without doing any modifications to the case, which is a big plus. As stated in the Features section, once the case is closed, I'm able to shake it and not hear any movement inside. Everything stays in the spot I left it in.
+
 # Limitations #
+- On this screen, some things at the bottom of the screen get slightly cut off. I'm guessing that Kali just doesn't support the resolution that the screen gives, but I haven't dug too much into this because it doesn't bother me too much, but it's something to consider if you want to try out a different screen.
+
+# End #
+I hope you enjoyed the recap of my project. If you have any questions, comments, or concerns, you can reach out to me at supercalifornia1992@proton.me. If you are planning or in the process of your own build, I wish you luck!
+
