@@ -1,7 +1,7 @@
 # Building a RPi-5 Pelican Cyberdeck
 A parts list, cost, features, and complete tutorial to building a RPi-5 Pelican case based cyberdeck.
 
-![Photo of cyberdeck](https://github.com/cubzzy/cyberdeck/sideview1.jpg)
+![Photo of cyberdeck](https://github.com/cubzzy/cyberdeck/blob/main/sideview1.jpg)
 
 # Purpose #
 The point of this cyberdeck is to provide a functional Linux system. I want to learn more about networking, and since Kali Linux has many networking packages pre-installed, I decided on Kali Linux as my chosen Linux distro, and a good way to obtain a Linux machine would be to make one. Building this project taught me a lot about how much information is out there in the DIY-electronics world (and how much you can do/learn through it), basic USB protocols, pinouts, power negotiation, and more. This is my first build, and I'm by no means an expert in any of the skills I mentioned, but I think starting a journey into the custom-electronics world with this is a good start.
