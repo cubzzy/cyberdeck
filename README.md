@@ -1,7 +1,7 @@
 # Building a RPi-5 Pelican Cyberdeck
 A parts list, cost, features, and complete tutorial to building a RPi-5 Pelican case based cyberdeck.
 
-![Photo of cyberdeck](https://github.com/cubzzy/cyberdeck/blob/main/Cyberdeck\ Pictures/sideview1.jpg)
+![Photo of cyberdeck](https://github.com/cubzzy/cyberdeck/blob/main/Cyberdeck%20Pictures/sideview1.jpg)
 
 # Purpose #
 The point of this cyberdeck is to provide a functional Linux system. I want to learn more about networking, and since Kali Linux has many networking packages pre-installed, I decided on Kali Linux as my chosen Linux distro, and a good way to obtain a Linux machine would be to make one. Building this project taught me a lot about how much information is out there in the DIY-electronics world (and how much you can do/learn through it), basic USB protocols, pinouts, power negotiation, and more. This is my first build, and I'm by no means an expert in any of the skills I mentioned, but I think starting a journey into the custom-electronics world with this is a good start.
@@ -170,8 +170,8 @@ You should now have a fully functioning Kali Linux machine that's capable of run
 - I found using a pocket knife to cut along the edges of the grids to the size of each component (keyboard, Pi, power bank), was most efficient. Because there's no vertical grids built in to the foam, I would take out the foam after cutting the edges, and cut it vertically however much I needed so that it was deep enough for the respective part when I put it back in. 
 - Everything fits snug and luckily I was able to achieve this without doing any modifications to the case, which is a big plus. As stated in the *Features* section, once the case is closed, I'm able to shake it and not hear any movement inside. Everything stays in the spot I left it in.
 
-![Picture of foam holding components](https://github.com/cubzzy/cyberdeck/blob/main/foam.jpg)
-![Picture of outside of case](https://github.com/cubzzy/cyberdeck/blob/main/case.jpg)
+![Picture of foam holding components](https://github.com/cubzzy/cyberdeck/blob/main/Cyberdeck%20Pictures/foam.jpg)
+![Picture of outside of case](https://github.com/cubzzy/cyberdeck/blob/main/Cyberdeck%20Pictures/case.jpg)
 # Limitations #
 - On this screen, some things at the bottom of the screen get slightly cut off. I'm guessing that Kali just doesn't support the resolution that the screen gives, but I haven't really dug into this because it doesn't bother me too much, but it's something to consider if you want to try out a different screen.
 
