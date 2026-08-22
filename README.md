@@ -21,7 +21,7 @@ $140.90
 $114.95
 
 **Power:**
-- [GeeekPI PD Power Expansion Board](https://www.amazon.com/dp/B0CYPRDY9Q?ref=ppx_yo2ov_dt_b_fed_asin_title)
+- [GeeekPi PD Power Expansion Board](https://www.amazon.com/dp/B0CYPRDY9Q?ref=ppx_yo2ov_dt_b_fed_asin_title)
 This will allow you to use the following power bank as it converts the power to the correct 5V/5A that the Pi 5 needs. I'll go into more detail on this later.
 $29.99
 
@@ -57,7 +57,7 @@ $16.99
 - There are no additional cords that are required for this build. Every part that needs a cord comes with its own.
 
 # Total Cost #
-Excluding tax, the total is **$748.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
+Excluding tax, the total is **$741.64**. Which obviously isn't ideal. However, there are several things you could do to reduce cost. For example, a large chunk of that cost is from the keyboard. Purchasing a regular keyboard or using one that you already have that outputs a USB-A connection is enough. I decided to spend a lot on a custom keyboard knowing that I could use it for any project down the line. 
 
 Additionally, you could use a mouse that you already have in your house, again just needing a USB-A connection. Unfortunately, because of the AI data center boom at the time of writing this, RAM has skyrocketed throughout all of computing which effectively doubled the price of RPis. 
 
@@ -162,7 +162,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 You should now have a fully functioning Kali Linux machine that's capable of running on WiFi and connecting to the internet. If you have any issues, feel free to contact me (I put my information at the bottom of this README).
 
 **Mounting**
-- After getting all the parts working, I spent some time determing how and in what case I wanted to mount my cyberdeck.
+- After getting all the parts working, I spent some time determining how and in what case I wanted to mount my cyberdeck.
 - I scrolled through some posts in r/cyberdeck and eventually got inspired by [this post](https://www.reddit.com/r/cyberDeck/comments/15af8l5/wip_cyberdeck_build_in_pelican_case/). I liked the 3D printed baseplate design that this person made, but I also knew that learning how to 3D print would take some time and effort.
 - The Pelican 1400 Case doesn't have any mounting screws, so this also made me averse to implementing the 3D-print idea, as it would either require me to modify the case or have the baseplate stay just through friction. 
 - Eventually, I decided to go with the easiest option, which was 3M Dual Lock to mount the monitor, and foam to hold all the bottom components in place.
