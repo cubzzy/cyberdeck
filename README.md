@@ -149,7 +149,7 @@ Assuming you're going with the RPi5 + PD Expansion Board mentioned in the parts 
 
 **Turning it On**
 - Now that you supplied power, a blue light should appear on the Expansion Board. Click the "Power On" button on the Expansion Board, and the Pi should start booting.
-![Power supplied RPI](https://github.com/cubzzy/cyberdeck/blob/main/frontview.jpg)
+![Power supplied RPI](https://github.com/cubzzy/cyberdeck/blob/main/Cyberdeck%20Pictures/frontview.jpg)
 **Check-up**
 - By this point, you should be booting up your Pi for the first time. All of the peripherals should be connected and working, and you should be at a log-in screen. You can now log in.
 
